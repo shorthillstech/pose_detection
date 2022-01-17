@@ -4,9 +4,6 @@ let pose;
 let skeleton;
 
 let brain;
-//let state = 'waiting';
-//let targetLabel;
-
 let poseLabel = 'Welcome';
 
 
@@ -75,21 +72,9 @@ function gotResult(error,results){
 
 
 function gotPoses(poses){
-  //console.log(poses);
   if(poses.length>0){
     pose = poses[0].pose;
     skeleton = poses[0].skeleton;
-    /*if(state=='collecting'){
-    let inputs = [];
-    for(let i=0;i<pose.keypoints.length;i++){
-      let x = pose.keypoints[i].position.x;
-      let y = pose.keypoints[i].position.y;
-      inputs.push(x);
-      inputs.push(y);
-    }
-    let target = [targetLabel];
-    brain.addData(inputs,target);
-    }*/
   }
 }
 
@@ -103,11 +88,6 @@ function draw() {
   scale(-1,1);
   image(video,0,0,video.width,video.height);
   if(pose){
-    /*fill(255,0,0);
-    ellipse(pose.nose.x,pose.nose.y,60);
-    fill(0,0,255);
-    ellipse(pose.leftWrist.x,pose.leftWrist.y,30);
-    ellipse(pose.rightWrist.x,pose.rightWrist.y,30);*/
     for(let i=0;i<pose.keypoints.length;i++){
       let x = pose.keypoints[i].position.x;
       let y = pose.keypoints[i].position.y;
