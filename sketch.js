@@ -6,12 +6,17 @@ let skeleton;
 let brain;
 let poseLabel = 'Welcome';
 
+function start () {
+  document.getElementById("showDiv").style.display = "block";
+  document.getElementById("homePageDiv").style.display = "none";
+}
 
 function setup() {
   const myCanvas = createCanvas(640, 480);
   myCanvas.parent('canvasDiv');
   video = createCapture(VIDEO);
   video.hide();
+
   poseNet = ml5.poseNet(video, modelReady);
   poseNet.on('pose', gotPoses);
   let options = {
@@ -27,8 +32,9 @@ function setup() {
     weights: 'model/model.weights.bin'
   }
   brain.load(modelDetails, brainLoaded)
-  //brain.loadData('poser.json', dataReady);
+  // brain.loadData('poser.json', dataReady);
 }
+
 
 function brainLoaded(){
   console.log('pose classification ready!');
@@ -56,6 +62,7 @@ function gotResult(error,results){
   if(results[0].confidence > 0.75){
   if(results[0].label=='c'){
     poseLabel = 'Namaste';
+    
   }
   else if(results[0].label=='d'){
     poseLabel = 'Salute';
@@ -66,6 +73,7 @@ function gotResult(error,results){
   else{
     poseLabel = 'Try a Pose';
   }}
+  document.getElementById("yourPose").innerHTML = poseLabel;
   console.log(results[0].label);
   classifyPose();
 }
@@ -104,9 +112,9 @@ function draw() {
   }
   pop();
   
-  fill(100,10,10);
-  noStroke();
-  textSize(50);
-  textAlign(CENTER,CENTER);
-  text(poseLabel,width/2,height/2);
+  // fill(100,10,10);
+  // noStroke();
+  // textSize(50);
+  // textAlign(CENTER,CENTER);
+  // text(poseLabel,width/2,height/2);
 }
