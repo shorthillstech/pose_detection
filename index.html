@@ -4,16 +4,88 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>pose_detection_demo</title>
-    <script src="libraries/p5.js"></script>
+    
     <script src="https://unpkg.com/ml5@latest/dist/ml5.min.js"></script>
+
+    <script src="libraries/p5.js"></script>
     <script src="sketch.js"></script>
+      <!-- <script src="train.js"></script> -->
+
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <div class="container">
-      <h1>Pose Detection</h1>
-      <h2>Try a pose: Namaste, Salute or Hands UP</h2>
-      <div id="canvasDiv"></div>
+    <div class="header" ref="navbar">
+      <div class="col2">
+        <img
+          src="images/SHT-logo.png"
+          class="img"
+        />
+        <!-- <h4 class="logotxt">
+          <span></span
+          ><span class="styleShort">Short</span
+          >Hills<br />
+          <h6>T E C H</h6>
+        </h4> -->
+        
+      </div>
+    </div>
+
+    <div class="homePage" id="homePageDiv">
+      <div class="poseText">
+        <img
+          src="images/SHT-logo.png"
+          class="img"
+        />
+        <h3>
+          Human Pose Detection
+        </h3>
+        <p>
+          We digitizes humans to make your products
+          smarter and interactive with real life data.
+        </p>
+        <p>
+          Try make a pose like Namaste, Salutes or
+          Hands-up.
+        </p>
+        <button class="btnStart" onclick="start()">START</button>
+      </div>
+      <div class="poseImg">
+        <img
+          src="images/human.png"
+          class="imgHuman"
+        />
+      </div>
+    </div>
+
+    <div class="container" id="showDiv">
+      <div class="heading">
+        Try make a pose like Namaste, Salutes or
+        Hands-up.
+      </div>
+      <hr>
+      <div class="canvasDiv">
+        <div id="canvasDiv"></div>
+      </div>
+      <div class="yourPose" id="yourPose">
+        
+      </div>
+    </div>
+
+    <div class="footer">
+      <div class="row1">
+        <div class="col-md-2 col-sm-6 logosection" :style="{height:'inherit'}">
+          <img src="/images/Sht-logo.png" class="img1" />
+          <h6 class="txt">@2021 Shorthills Tech LLC<br /> Shorthills, NJ</h6>
+        </div>
+        <div class="col6">
+          <h4 class="icon"><img src="/images/link.png" alt="" /></h4>
+          <h4 class="icon"><img src="/images/face.png" alt="" /></h4>
+  
+          <h6 class="txt">
+            info@Shorthills.com
+          </h6>
+        </div>
+      </div>
     </div>
   </body>
 </html>
