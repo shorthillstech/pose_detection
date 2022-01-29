@@ -153,7 +153,12 @@ hr {
   justify-content: center;
   align-items: center;
 }
+.col6> .txt{
+text-align: right;
+}
 .txt {
+  width:100%;
+ 
   margin-top: 18px;
   font-size: 18px;
 }
