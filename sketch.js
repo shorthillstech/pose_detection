@@ -8,6 +8,7 @@ let poseLabel = 'Welcome';
 
 function start () {
   document.getElementById("showDiv").style.display = "block";
+  document.getElementById("header").style.display = "block";
   document.getElementById("homePageDiv").style.display = "none";
 }
 
