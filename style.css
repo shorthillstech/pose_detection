@@ -15,68 +15,13 @@
   height: 73px;
   background: #FFFFFF;
 }
-/* .col2 {
-  display: inline-flex;
-  width: 15%;
-  justify-content: flex-start;
-  align-items: center;
-} */
-.img {
+
+.header .img {
   padding: 10px 0 10px 80px;
   height: 53px;
 }
 
-/* .row1 {
-  display: inline-flex;
-  justify-content: center;
-  padding: 10px;
-  align-items: center;
-  width: 100%;
-} */
-/* .signup {
-  background: #51c1cd;
-  color: white;
-}
-.btn {
-  padding: 5px 35px;
-  margin: 0px 5px;
-  border: 1px solid lightgray;
-  border-radius: 5px;
-}
 
-.col6 {
-  width: 50%;
-  display: inline-flex;
-  align-items: center;
-  justify-content: flex-end;
-}
-.col10 {
-  width: 100%;
-}
-.col8 {
-  width: 70%;
-  justify-content: center;
-  align-items: center;
-}
- */
-
-
-/* @media (max-width: 750px) {
-  .col2 {
-    justify-content: flex-start;
-    width: 2%;
-    margin-right: 100%;
-  }
-  .header {
-    padding: 4px 0px;
-  }
-  .col2 > .logotxt,
-  img {
-    margin-top: 0px;
-    margin-left: 0px;
-    margin-right: 0px;
-  }
-} */
 .fullHomePage {
   background: #EBFDFF;
   padding: 80px;
@@ -217,33 +162,6 @@ hr {
   background: #1e242e;
   color: white;
 }
-@media (max-width: 1400px) {
-  .txt {
-    height: 30px;
-    font-size: 16px;
-  }
-  
-  .img1{
-    margin:0px;
-  }
-  
- 
-}
-@media (max-width: 750px) {
-  .row1 {
-    padding: 18px;
-    height: 140px;
-  }
-  .footer{
-    height: 140px;
-  }
 
-  .txt {
-    font-size: 12px;
-  }
-  .icon {
-    font-size: 20px;
-  }
-}
 
 /* footer end */
