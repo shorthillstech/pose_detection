@@ -20,7 +20,32 @@
   padding: 10px 0 10px 80px;
   height: 53px;
 }
-
+/* .b1 { 
+    float: right; 
+    margin: 17px 100px 10px 80px; 
+  } 
+  
+  .btn1 { 
+    width: 95px; 
+    height: 36px; 
+   margin-top: 0px; 
+   border: 1px solid #ccd6e3; 
+    border-radius: 4px ; 
+    cursor: pointer; 
+  } 
+  
+  .btn2 { 
+    width: 95px; 
+    height: 36px; 
+    padding: 10px 0px 10px 0px; 
+    margin-left: 10px; 
+    background: #50C2CE; 
+    color: white; 
+    text-align: center; 
+    border: none; 
+    border-radius: 5px; 
+    cursor: pointer;  
+  } */
 
 .fullHomePage {
   background: #EBFDFF;
