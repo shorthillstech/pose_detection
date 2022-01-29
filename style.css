@@ -3,7 +3,9 @@
 * {
   padding: 0;
   margin: 0;
+  box-sizing: border-box;
 }
+
 .header {
   display: none;
   flex-direction: row;
@@ -49,12 +51,14 @@
 
 .fullHomePage {
   background: #EBFDFF;
-  padding: 80px;
+  width: 100%;
+  height: 100%;
+  /* padding: 80px; */
 }
 .homePage {
   font-family: "Montserrat", sans-serif;
   display: flex;
-  width: 100%;
+  width: 1280px;
   height: 804px;
   border-radius: 40px;
   background: #FFFFFF;
@@ -103,7 +107,6 @@
 .poseImg img {
   width: 100%;
   height: 804px;
-  margin-left: 4px;
 }
 
 .container {
@@ -201,3 +204,8 @@ text-align: right;
 
 
 /* footer end */
+@media (min-width : 1440px) {
+  .fullHomePage {
+    padding: 80px;
+  }
+}
