@@ -53,7 +53,7 @@
   background: #EBFDFF;
   width: 100%;
   height: 100%;
-  /* padding: 80px; */
+  padding:40px;
 }
 .homePage {
   font-family: "Montserrat", sans-serif;
@@ -211,18 +211,14 @@ text-align: right;
   .fullHomePage{
     display: flex;
     justify-content: center;
+    padding:80px;
   }
   .homePage{
     max-width: 1280px;
     width:1280px;
-    padding:80px auto ;
+    
   }
 
 }
 
 /* footer end */
-@media (min-width : 1440px) {
-  .fullHomePage {
-    padding: 80px;
-  }
-}
