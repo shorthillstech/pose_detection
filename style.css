@@ -5,7 +5,12 @@
   margin: 0;
   box-sizing: border-box;
 }
-
+body {
+  display: flex;
+  height: 100vh;
+  
+  flex-direction: column;
+}
 .header {
   display: none;
   flex-direction: row;
@@ -22,51 +27,30 @@
   padding: 10px 0 10px 80px;
   height: 53px;
 }
-/* .b1 { 
-    float: right; 
-    margin: 17px 100px 10px 80px; 
-  } 
-  
-  .btn1 { 
-    width: 95px; 
-    height: 36px; 
-   margin-top: 0px; 
-   border: 1px solid #ccd6e3; 
-    border-radius: 4px ; 
-    cursor: pointer; 
-  } 
-  
-  .btn2 { 
-    width: 95px; 
-    height: 36px; 
-    padding: 10px 0px 10px 0px; 
-    margin-left: 10px; 
-    background: #50C2CE; 
-    color: white; 
-    text-align: center; 
-    border: none; 
-    border-radius: 5px; 
-    cursor: pointer;  
-  } */
+
 
 .fullHomePage {
+  flex: 1 0 auto;
   background: #EBFDFF;
   width: 100%;
-  height: 100%;
+  /* height: 100%; */
+  display: flex;
+  align-items: center;
   padding:40px;
 }
 .homePage {
   font-family: "Montserrat", sans-serif;
   display: flex;
    width:100%;
-  height: 804px;
+   align-items: center;
+  /* height: 804px; */
   border-radius: 40px;
   background: #FFFFFF;
   box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.25);
 }
 .poseText {
   width: 50%;
-  height: 804px;
+  /* height: 804px; */
 }
 .poseText img {
   margin-left: 40px;
@@ -106,11 +90,11 @@ line-height: 29px;
 }
 .poseImg {
   width: 50%;
-  height: 804px;
+  height: auto;
 }
 .poseImg img {
   width: 100%;
-  height: 804px;
+  /* height: 804px; */
 }
 
 .container {
@@ -219,6 +203,280 @@ text-align: right;
     
   }
 
+}
+@media (max-width: 1310px) {
+  .fullHomePage {
+    padding: 40px;
+  }
+  .homePage{
+    border-radius: 40px;
+  }
+  .poseText h3 {
+    font-weight: 600;
+    font-size: 60px;
+  }
+  .poseText h6 {
+    margin-left: 40px;
+    width: 90%;
+    font-weight: 400;
+    font-size: 24px;
+  }
+}
+@media (max-width: 1240px) {
+  .fullHomePage {
+    padding: 40px;
+  }
+  .homePage{
+    border-radius: 40px;
+  }
+  .poseText h3 {
+    font-weight: 600;
+    font-size: 60px;
+    margin-top: 50px;
+    margin-bottom: 30px;
+  }
+  .poseText h6 {
+    margin-left: 40px;
+    width: 90%;
+    font-weight: 400;
+    font-size: 24px;
+  }
+}
+@media (max-width: 1190px) {
+  .fullHomePage {
+    padding: 40px;
+  }
+  .homePage{
+    border-radius: 40px;
+  }
+  .poseText h3 {
+    font-weight: 600;
+    font-size: 50px;
+    margin-top: 40px;
+  }
+  .poseText h6 {
+    margin-top: 20px;
+    width: 90%;
+    font-weight: 400;
+    font-size: 24px;
+  }
+  .poseText button {
+    margin-left: 40px;
+    margin-bottom: 40px;
+  }
+}
+@media (max-width: 1060px) {
+  .fullHomePage {
+    padding: 20px;
+  }
+  .homePage{
+    border-radius: 40px;
+    
+  }
+  .poseText h3 {
+    font-weight: 600;
+    font-size: 50px;
+    margin-top: 40px;
+  }
+  .poseText h6 {
+    margin-top: 20px;
+    width: 90%;
+    font-weight: 400;
+    font-size: 24px;
+  }
+  .poseText button {
+    margin-left: 40px;
+    margin-bottom: 40px;
+  }
+}
+@media (max-width: 1030px) {
+  .fullHomePage {
+    padding: 20px;
+  }
+  .homePage{
+    border-radius: 40px;
+  }
+  .poseText h3 {
+    font-weight: 600;
+    font-size: 50px;
+    margin-top: 40px;
+    margin-bottom: 10px;
+  }
+  .poseText h6 {
+    margin-top: 10px;
+    width: 90%;
+    font-weight: 400;
+    font-size: 24px;
+  }
+  .poseText button {
+    margin-left: 40px;
+    margin-bottom: 20px;
+  }
+}
+@media (max-width: 950px) {
+  .fullHomePage {
+    padding: 20px;
+  }
+  .homePage{
+    border-radius: 40px;
+  }
+  .poseText h3 {
+    font-weight: 600;
+    font-size: 50px;
+    margin-top: 40px;
+    margin-bottom: 10px;
+  }
+  .poseText h6 {
+    margin-top: 10px;
+    margin-bottom:30px;
+    width: 90%;
+    font-weight: 400;
+    font-size: 24px;
+  }
+  .poseText button {
+    margin-left: 40px;
+    margin-bottom: 10px;
+  }
+}
+@media (max-width: 845px) {
+  .fullHomePage {
+    padding: 10px;
+  }
+  .homePage{
+    border-radius: 40px;
+  }
+  .poseText h3 {
+    font-weight: 600;
+    font-size: 50px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+  }
+  .poseText h6 {
+    margin-top: 10px;
+    margin-bottom:30px;
+    width: 92%;
+    font-weight: 400;
+    font-size: 20px;
+  }
+  .poseText button {
+    margin-left: 40px;
+    margin-bottom: 10px;
+  }
+}
+@media (max-width: 800px) {
+  .fullHomePage {
+    padding: 10px;
+  }
+  .homePage{
+    border-radius: 40px;
+  }
+  .poseText h3 {
+    font-weight: 600;
+    font-size: 40px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+  }
+  .poseText h6 {
+    margin-top: 10px;
+    margin-bottom:30px;
+    width: 92%;
+    font-weight: 400;
+    font-size: 20px;
+  }
+  .poseText button {
+    margin-left: 40px;
+    margin-bottom: 10px;
+  }
+}
+@media (max-width: 768px) {
+  .fullHomePage {
+    padding: 0px;
+  }
+  .homePage{
+    border-radius: 0px;
+    display: block;
+  }
+
+  .poseText {
+    width: 100%;
+    margin-left: 0;
+    padding-left: 40px;
+  }
+  .poseText img {
+    margin-left: 0px;
+  }
+  .poseText h3 {
+    width: 90%;
+    font-weight: 600;
+    font-size: 50px;
+    margin-left: 0;
+  }
+  .poseText h6 {
+    width: 90%;
+    font-weight: 400;
+    font-size: 24px;
+    margin-left: 0;
+    margin-top: 60px;
+    margin-bottom: 60px;
+  }
+  .poseText button {
+    margin-left: 0px;
+    margin-bottom: 60px;
+  }
+  .poseImg {
+    width: 100%;
+
+  }
+  .poseImg img {
+    border-bottom-left-radius: 30px;
+    border-top-left-radius: 30px;
+  }
+}
+
+@media (max-width: 330px) {
+  .fullHomePage {
+    padding: 0px;
+  }
+  .homePage{
+    border-radius: 0px;
+    display: block;
+    box-shadow: none;
+  }
+
+  .poseText {
+    
+    width: 120%;
+    margin-left: 0;
+    padding-left: 40px;
+  }
+  .poseText img {
+    margin-left: 0px;
+  }
+  .poseText h3 {
+    width: 90%;
+    font-weight: 600;
+    font-size: 35px;
+    margin-left: 0;
+  }
+  .poseText h6 {
+    width: 90%;
+    font-weight: 400;
+    font-size: 20px;
+    margin-left: 0;
+    margin-top: 60px;
+    margin-bottom: 80px;
+  }
+  .poseText button {
+    margin-left: 0px;
+    margin-bottom: 60px;
+  }
+  .poseImg {
+    width: 120%;
+  }
+  .header .img {
+    padding: 10px 0 0 10px;
+  }
+  
 }
 
 /* footer end */
