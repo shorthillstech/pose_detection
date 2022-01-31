@@ -13,7 +13,17 @@ function start () {
 }
 
 function setup() {
-  const myCanvas = createCanvas(640, 480);
+  var myCanvas;
+  console.log(screen.width)
+  if(screen.width < 440){
+    myCanvas = createCanvas(240, 280);
+  }
+  else if(screen.width < 650 && screen.width > 440){
+    myCanvas = createCanvas(440, 380);
+  }
+  else {
+    myCanvas = createCanvas(640, 480);
+  }
   myCanvas.parent('canvasDiv');
   video = createCapture(VIDEO);
   video.hide();
