@@ -44,7 +44,7 @@ After cloning the application on your local system use ```cd Pose-Detection``` c
 
 
 
-
+<img src="./docs/poseDetection.gif" width="700" height="400" />
 
 
 
