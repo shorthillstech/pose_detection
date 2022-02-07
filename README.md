@@ -5,22 +5,28 @@
 </h1>
 
 ## What is this for?
-This repository convert your normal image into anime image.
+This repository is based on a machine learning application which detects you body pose.
 
 
 ## Anime
-Anime is hand-drawn and computer animation originating from Japan. In Japan and in Japanese, anime describes all animated works, regardless of style or origin. However, outside of Japan and in English, anime is colloquial for Japanese animation and refers specifically to animation produced in Japan.
+ We digitizes humans to make your products
+smarter and interactive with real life data.
+
+Try make a pose like Namaste, Salutes or Hands-up.
 
 
 ## Links to references
 
-HuggingFace
+Github
 
-https://huggingface.co/spaces/akhaliq/AnimeGANv2
+https://github.com/jscriptcoder/tfjs-posenet
+
+NPM
+
+https://www.npmjs.com/package/curve-matcher
 
 
-
-## Laravel and Vue Installation
+## Installation
 
 Clone the Application on your local system.
 After cloning the application on your local system use ```cd Pose-Detection``` command to go to the Pose-Detection Directory 
