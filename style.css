@@ -58,22 +58,19 @@ body {
 }
 .poseText h3 {
   font-weight: 700;
-  font-size: 72px;
+  font-size: 64px;
   margin-left: 40px;
   margin-top: 100px;
-  margin-bottom: 60px;
 }
 .poseText h6 {
   color: #A9A9A9;
   margin-left: 40px;
   width: 578px;
-height: 58px;
-
+  height: 58px;
   font-weight: 500;
-font-size: 24px;
-line-height: 29px;
-  margin-top: 60px;
-  margin-bottom:60px;
+  font-size: 24px;
+  line-height: 29px;
+  margin-top: 40px;
 }
 .poseText button {
   width: 200px;
@@ -86,7 +83,7 @@ line-height: 29px;
   line-height: 34px;
   border: none;
   margin-left: 40px;
-  margin-bottom: 60px;
+  margin-top: 40px;
 }
 .poseImg {
   width: 50%;
@@ -116,6 +113,13 @@ line-height: 29px;
 
 .container .heading p {
   padding-top: 40px;
+  font-family: Proxima Nova;
+font-style: normal;
+font-weight: normal;
+font-size: 30px;
+line-height: 30px;
+
+color: #000000;
 }
 
 hr {
@@ -134,10 +138,14 @@ hr {
   margin-top: 50px;
 }
 .container .yourPose {
-  font-family: Montserrat;
   text-align: center;
   align-items: center;
   color: #000000;
+  font-family: Proxima Nova;
+font-style: normal;
+font-weight: normal;
+font-size: 30px;
+line-height: 30px;
   padding: 10px 0 50px 0;
 }
 /* footer start */
@@ -299,11 +307,10 @@ text-align: right;
   .poseText h3 {
     font-weight: 600;
     font-size: 50px;
-    margin-top: 40px;
-    margin-bottom: 10px;
+    margin-top: 30px;
   }
   .poseText h6 {
-    margin-top: 10px;
+    margin-top: 20px;
     width: 90%;
     font-weight: 400;
     font-size: 24px;
@@ -322,20 +329,17 @@ text-align: right;
   }
   .poseText h3 {
     font-weight: 600;
-    font-size: 50px;
-    margin-top: 40px;
-    margin-bottom: 10px;
+    font-size: 35px;
+    margin-top: 20px;
   }
   .poseText h6 {
-    margin-top: 10px;
-    margin-bottom:30px;
+    margin-top: 20px;
     width: 90%;
     font-weight: 400;
-    font-size: 24px;
+    font-size: 20px;
   }
   .poseText button {
-    margin-left: 40px;
-    margin-bottom: 10px;
+    margin-top: 10px;
   }
 }
 @media (max-width: 845px) {
@@ -347,20 +351,17 @@ text-align: right;
   }
   .poseText h3 {
     font-weight: 600;
-    font-size: 50px;
-    margin-top: 20px;
-    margin-bottom: 10px;
+    font-size: 32px;
+    margin-top: 10px;
   }
   .poseText h6 {
-    margin-top: 10px;
-    margin-bottom:30px;
+    margin-top: 20px;
     width: 92%;
     font-weight: 400;
     font-size: 20px;
   }
   .poseText button {
     margin-left: 40px;
-    margin-bottom: 10px;
   }
 }
 @media (max-width: 800px) {
@@ -372,20 +373,17 @@ text-align: right;
   }
   .poseText h3 {
     font-weight: 600;
-    font-size: 40px;
-    margin-top: 20px;
-    margin-bottom: 10px;
+    font-size: 30px;
+    margin-top: 10px;
   }
   .poseText h6 {
     margin-top: 10px;
-    margin-bottom:30px;
     width: 92%;
     font-weight: 400;
     font-size: 20px;
   }
   .poseText button {
     margin-left: 40px;
-    margin-bottom: 10px;
   }
 }
 @media (max-width: 768px) {
